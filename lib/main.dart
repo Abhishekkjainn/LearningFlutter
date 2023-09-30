@@ -1,6 +1,7 @@
 import 'package:abhishekapp/pages/homepage.dart';
 import 'package:abhishekapp/pages/loginpage.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,10 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
       themeMode: ThemeMode.system,
+      theme: ThemeData(
+          primarySwatch: Colors.deepPurple,
+          fontFamily: GoogleFonts.poppins().fontFamily),
       darkTheme: ThemeData(brightness: Brightness.dark),
-      initialRoute: "/",
+      initialRoute: "/login",
       routes: {
         "/": (context) => Homepage(),
         "/login": (context) => LoginPage(),
