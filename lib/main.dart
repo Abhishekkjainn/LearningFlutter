@@ -1,3 +1,4 @@
+import 'package:abhishekapp/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,18 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Material(
-            child: Center(
-      child: Container(
-        child: Text(
-          "This is My First App",
-          style: TextStyle(
-              color: Colors.blueGrey,
-              fontSize: 30.0,
-              fontWeight: FontWeight.w600),
-        ),
-      ),
-    )));
+    
+
+    return MaterialApp(home: Homepage());
   }
 }
