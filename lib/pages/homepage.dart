@@ -1,3 +1,4 @@
+//Curly Braces to input Default Value
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
@@ -14,7 +15,7 @@ class Homepage extends StatelessWidget {
       body: Center(
         child: Container(
           child: Text(
-            "Welcome to $name of Flutter Code By $days",
+            "Welcome to $name Days of Flutter Code By $days",
             style: TextStyle(
                 color: Colors.blueGrey,
                 fontSize: 18.0,
